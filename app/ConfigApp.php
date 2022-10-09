@@ -10,8 +10,9 @@ class ConfigApp
 {
     public function __construct()
     {
-        $envFile = realpath("./../.env");
-        Env::load($envFile);
+        /*$envFile = realpath("./../.env");
+        Env::load($envFile);*/
+        $_ENV['SECRET_JWT']='sec!ReT423*&';
     }
 
 }
